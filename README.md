@@ -1,30 +1,34 @@
-# Southeast London Affordability Map
+# 🗺️ Why is SE London Cheaper?
 
-An interactive map exploring housing affordability in Southeast London using ONS (Office for National Statistics) data.
+An interactive map exploring housing affordability, transport isolation, and population stability in Southeast London using ONS (Office for National Statistics) data.
+
+**[View Live Map →](https://tolliam.github.io/se-london/)**
 
 ## Features
 
-- Interactive choropleth map showing affordability ratios by area
+- Interactive choropleth map showing affordability ratios by MSOA
 - Comparison of house prices vs median earnings
+- Transport connectivity analysis (tube/rail station distances)
+- Population stability metrics ("born locally" rates)
 - Tooltips with detailed statistics per area
-- Filter controls for different metrics
 
 ## Tech Stack
 
 - **Data Pipeline**: Python (pandas, geopandas, requests)
 - **Mapping**: Leaflet.js
-- **Hosting**: GitHub Pages
+- **Hosting**: GitHub Pages (via Actions)
 
 ## Project Structure
 
 ```
-geographic/
-├── data/                 # Processed GeoJSON and CSV files
+se-london/
+├── data/                 # Processed GeoJSON and statistics
 ├── scripts/              # Python data processing scripts
 ├── src/                  # Frontend HTML/CSS/JS
 │   ├── index.html
 │   ├── css/
 │   └── js/
+├── .github/workflows/    # GitHub Actions deployment
 ├── requirements.txt      # Python dependencies
 └── README.md
 ```
@@ -63,12 +67,9 @@ Then visit http://localhost:8000
 
 ## Deployment
 
-This project is designed for GitHub Pages:
+This project deploys automatically to GitHub Pages via GitHub Actions when you push to `main`.
 
-1. Push to GitHub
-2. Go to Settings → Pages
-3. Select "Deploy from a branch" → main → /src
-4. Your map will be live at `https://username.github.io/geographic`
+The live site is available at: https://tolliam.github.io/se-london/
 
 ## License
 
