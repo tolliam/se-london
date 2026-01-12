@@ -1,0 +1,84 @@
+{
+  "level": "MSOA",
+  "total_areas": 1011,
+  "london_overall": {
+    "avg_ratio": 13.7,
+    "median_ratio": 13.2,
+    "avg_price": 579729
+  },
+  "se_london": {
+    "count": 253,
+    "avg_ratio": 11.9,
+    "avg_price": 464932,
+    "boroughs": [
+      "Greenwich",
+      "Lewisham",
+      "Southwark",
+      "Lambeth",
+      "Bromley",
+      "Bexley",
+      "Croydon"
+    ],
+    "most_affordable_area": "Bexley 011"
+  },
+  "rest_of_london": {
+    "count": 758,
+    "avg_ratio": 14.3,
+    "avg_price": 618045
+  },
+  "comparison": {
+    "ratio_difference": 2.4,
+    "se_london_savings_percent": 24.8
+  },
+  "transport_analysis": {
+    "correlations": {
+      "affordability_vs_tube_distance": -0.145,
+      "affordability_vs_transport_score": 0.356,
+      "affordability_vs_born_locally": -0.054
+    },
+    "se_london": {
+      "avg_tube_distance_km": 6.14,
+      "pct_with_tube_nearby": 16.6,
+      "avg_transport_score": 35.4,
+      "avg_born_locally_pct": 42.2
+    },
+    "rest_of_london": {
+      "avg_tube_distance_km": 3.29,
+      "pct_with_tube_nearby": 40.0,
+      "avg_transport_score": 47.0,
+      "avg_born_locally_pct": 29.6
+    },
+    "station_comparison": {
+      "se_london": {
+        "avg_tube_distance_km": 6.37,
+        "avg_station_distance_km": 0.97,
+        "pct_with_tube_nearby": 13.4,
+        "pct_with_station_nearby": 87.4
+      },
+      "rest_of_london": {
+        "avg_tube_distance_km": 5.07,
+        "avg_station_distance_km": 3.9,
+        "pct_with_tube_nearby": 14.1,
+        "pct_with_station_nearby": 28.1
+      }
+    }
+  },
+  "amenity_analysis": {
+    "correlations": {
+      "affordability_vs_lifestyle_density": 0.221,
+      "affordability_vs_amenity_density": 0.221
+    },
+    "se_london": {
+      "total_pubs": 761,
+      "total_cafes": 1310,
+      "total_restaurants": 1507,
+      "avg_lifestyle_density": 15.9
+    },
+    "rest_of_london": {
+      "total_pubs": 2437,
+      "total_cafes": 5294,
+      "total_restaurants": 7383,
+      "avg_lifestyle_density": 23.8
+    }
+  }
+}

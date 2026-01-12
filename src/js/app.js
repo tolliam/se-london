@@ -10,10 +10,10 @@
 const CONFIG = {
     mapCenter: [51.48, -0.05],
     defaultZoom: 11,
-    boroughDataPath: '../data/london_affordability.geojson',
-    boroughStatsPath: '../data/summary_stats.json',
-    msoaDataPath: '../data/london_affordability_msoa.geojson',
-    msoaStatsPath: '../data/summary_stats_msoa.json',
+    boroughDataPath: 'data/london_affordability.geojson',
+    boroughStatsPath: 'data/summary_stats.json',
+    msoaDataPath: 'data/london_affordability_msoa.geojson',
+    msoaStatsPath: 'data/summary_stats_msoa.json',
     seBorough: [
         'Greenwich', 'Lewisham', 'Southwark', 'Lambeth',
         'Bromley', 'Bexley', 'Croydon'
