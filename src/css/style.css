@@ -74,27 +74,15 @@ body {
     opacity: 0.85;
 }
 
-/* Main Content Layout */
-.main-content {
-    display: grid;
-    grid-template-columns: 1fr 350px;
-    gap: 24px;
-}
-
-@media (max-width: 1024px) {
-    .main-content {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* Map Container */
 .map-container {
     position: relative;
-    height: 600px;
+    height: 550px;
     background: white;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     overflow: hidden;
+    margin-bottom: 24px;
 }
 
 #map {
@@ -165,11 +153,23 @@ body {
     background: transparent;
 }
 
-/* Sidebar */
-.sidebar {
-    display: flex;
-    flex-direction: column;
+/* Bottom Panels */
+.bottom-panels {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+}
+
+@media (max-width: 1200px) {
+    .bottom-panels {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .bottom-panels {
+        grid-template-columns: 1fr;
+    }
 }
 
 .controls,
@@ -189,6 +189,12 @@ body {
     font-size: 1rem;
     margin-bottom: 12px;
     color: #1a1a2e;
+}
+
+.options-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
 /* Checkbox Controls */

@@ -42,81 +42,79 @@
             </div>
         </div>
 
-        <!-- Main Content -->
-        <div class="main-content">
-            <!-- Map -->
-            <div class="map-container">
-                <div id="map"></div>
-                <div class="legend" id="legend">
-                    <h4>Affordability Ratio</h4>
-                    <p class="legend-subtitle">(House Price ÷ Annual Earnings)</p>
-                    <div class="legend-items">
-                        <div class="legend-item">
-                            <span class="legend-color" style="background: #1a9850"></span>
-                            <span>&lt; 10 (Affordable)</span>
-                        </div>
-                        <div class="legend-item">
-                            <span class="legend-color" style="background: #91cf60"></span>
-                            <span>10-12 (Moderate)</span>
-                        </div>
-                        <div class="legend-item">
-                            <span class="legend-color" style="background: #fee08b"></span>
-                            <span>12-15 (Stretched)</span>
-                        </div>
-                        <div class="legend-item">
-                            <span class="legend-color" style="background: #fc8d59"></span>
-                            <span>15-20 (Unaffordable)</span>
-                        </div>
-                        <div class="legend-item">
-                            <span class="legend-color" style="background: #d73027"></span>
-                            <span>&gt; 20 (Very Unaffordable)</span>
-                        </div>
+        <!-- Map Section -->
+        <div class="map-container">
+            <div id="map"></div>
+            <div class="legend" id="legend">
+                <h4>Affordability Ratio</h4>
+                <p class="legend-subtitle">(House Price ÷ Annual Earnings)</p>
+                <div class="legend-items">
+                    <div class="legend-item">
+                        <span class="legend-color" style="background: #1a9850"></span>
+                        <span>&lt; 10 (Affordable)</span>
                     </div>
-                    <div class="legend-note">
-                        <span class="se-indicator"></span> SE London boroughs highlighted
+                    <div class="legend-item">
+                        <span class="legend-color" style="background: #91cf60"></span>
+                        <span>10-12 (Moderate)</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background: #fee08b"></span>
+                        <span>12-15 (Stretched)</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background: #fc8d59"></span>
+                        <span>15-20 (Unaffordable)</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background: #d73027"></span>
+                        <span>&gt; 20 (Very Unaffordable)</span>
                     </div>
                 </div>
+                <div class="legend-note">
+                    <span class="se-indicator"></span> SE London highlighted
+                </div>
             </div>
+        </div>
 
-            <!-- Sidebar -->
-            <aside class="sidebar">
-                <div class="controls">
-                    <h3>Data Theme</h3>
-                    <div class="theme-toggle">
-                        <label class="radio-label">
-                            <input type="radio" name="theme" value="affordability" checked>
-                            💷 Affordability Ratio
-                        </label>
-                        <label class="radio-label">
-                            <input type="radio" name="theme" value="tube_distance">
-                            🚇 Tube Distance
-                        </label>
-                        <label class="radio-label">
-                            <input type="radio" name="theme" value="station_distance">
-                            🚉 Any Station Distance
-                        </label>
-                        <label class="radio-label">
-                            <input type="radio" name="theme" value="transport_score">
-                            🚗 UK Connectivity
-                        </label>
-                        <label class="radio-label">
-                            <input type="radio" name="theme" value="born_local">
-                            🏡 Born Locally %
-                        </label>
-                    </div>
-                    <hr class="divider">
-                    <h3>Detail Level</h3>
-                    <div class="level-toggle">
-                        <label class="radio-label">
-                            <input type="radio" name="level" value="borough" checked>
-                            Borough Level
-                        </label>
-                        <label class="radio-label">
-                            <input type="radio" name="level" value="msoa">
-                            MSOA Level (detailed)
-                        </label>
-                    </div>
-                    <hr class="divider">
+        <!-- Bottom Panels -->
+        <div class="bottom-panels">
+            <div class="controls">
+                <h3>Data Theme</h3>
+                <div class="theme-toggle">
+                    <label class="radio-label">
+                        <input type="radio" name="theme" value="affordability" checked>
+                        💷 Affordability Ratio
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="theme" value="tube_distance">
+                        🚇 Tube Distance
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="theme" value="station_distance">
+                        🚉 Any Station Distance
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="theme" value="transport_score">
+                        🚗 UK Connectivity
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="theme" value="born_local">
+                        🏡 Born Locally %
+                    </label>
+                </div>
+                <hr class="divider">
+                <h3>Options</h3>
+                <div class="options-row">
+                    <label class="radio-label">
+                        <input type="radio" name="level" value="borough" checked>
+                        Borough Level
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="level" value="msoa">
+                        MSOA Level
+                    </label>
+                </div>
+                <div class="options-row">
                     <label class="checkbox-label">
                         <input type="checkbox" id="highlight-se" checked>
                         Highlight SE London
@@ -130,39 +128,39 @@
                         Show tube stations
                     </label>
                 </div>
+            </div>
 
-                <div class="info-panel" id="theme-info">
-                    <h3>About This Map</h3>
-                    <p id="theme-description">
-                        This map visualizes housing affordability across London. 
-                        The <strong>affordability ratio</strong> compares median house prices 
-                        to median annual earnings.
-                    </p>
-                    <p class="highlight-text" id="theme-insight">
-                        Southeast London (highlighted) offers significantly better affordability 
-                        than many other parts of the capital.
-                    </p>
-                </div>
+            <div class="info-panel" id="theme-info">
+                <h3>About This Map</h3>
+                <p id="theme-description">
+                    This map visualizes housing affordability across London. 
+                    The <strong>affordability ratio</strong> compares median house prices 
+                    to median annual earnings.
+                </p>
+                <p class="highlight-text" id="theme-insight">
+                    Southeast London (highlighted) offers significantly better affordability 
+                    than many other parts of the capital.
+                </p>
+            </div>
 
-                <div class="rankings" id="rankings">
-                    <h3>Borough Rankings</h3>
-                    <p class="rankings-subtitle">Most to least affordable</p>
-                    <ol class="rankings-list" id="rankings-list">
-                        <!-- Populated by JavaScript -->
-                    </ol>
-                </div>
+            <div class="rankings" id="rankings">
+                <h3>Borough Rankings</h3>
+                <p class="rankings-subtitle">Most to least affordable</p>
+                <ol class="rankings-list" id="rankings-list">
+                    <!-- Populated by JavaScript -->
+                </ol>
+            </div>
 
-                <div class="data-source">
-                    <h4>Data Sources</h4>
-                    <ul>
-                        <li><a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/datasets/ratioofhousepricetoresidencebasedearningslowerquartileandmedian" target="_blank">ONS House Price to Earnings Ratios</a></li>
-                        <li><a href="https://geoportal.statistics.gov.uk/datasets/ons::msoa-dec-2021-boundaries-ew-bgc-v3/about" target="_blank">ONS MSOA 2021 Boundaries (V3)</a></li>
-                        <li><a href="https://tfl.gov.uk/corporate/publications-and-reports/transport-data" target="_blank">TfL Station Locations</a></li>
-                        <li><a href="https://www.ons.gov.uk/census" target="_blank">Census 2021 (Born Locally estimates)</a></li>
-                    </ul>
-                    <p style="font-size: 0.75rem; color: #888; margin-top: 8px;">Note: Transport scores & born-locally rates are modelled estimates for illustration.</p>
-                </div>
-            </aside>
+            <div class="data-source">
+                <h4>Data Sources</h4>
+                <ul>
+                    <li><a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/datasets/ratioofhousepricetoresidencebasedearningslowerquartileandmedian" target="_blank">ONS House Price to Earnings Ratios</a></li>
+                    <li><a href="https://geoportal.statistics.gov.uk/datasets/ons::msoa-dec-2021-boundaries-ew-bgc-v3/about" target="_blank">ONS MSOA 2021 Boundaries (V3)</a></li>
+                    <li><a href="https://tfl.gov.uk/corporate/publications-and-reports/transport-data" target="_blank">TfL Station Locations</a></li>
+                    <li><a href="https://www.ons.gov.uk/census" target="_blank">Census 2021 (Born Locally estimates)</a></li>
+                </ul>
+                <p style="font-size: 0.75rem; color: #888; margin-top: 8px;">Note: Transport scores & born-locally rates are modelled estimates for illustration.</p>
+            </div>
         </div>
     </div>
 
