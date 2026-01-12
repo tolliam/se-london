@@ -90,6 +90,7 @@ body {
 /* Map Container */
 .map-container {
     position: relative;
+    height: 600px;
     background: white;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -97,7 +98,7 @@ body {
 }
 
 #map {
-    height: 600px;
+    height: 100%;
     width: 100%;
     border-radius: 12px;
 }
