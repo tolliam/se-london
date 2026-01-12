@@ -1,0 +1,454 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #f5f7fa;
+    color: #1a1a2e;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Stats Panel */
+.stats-panel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+}
+
+.stat-card.highlight {
+    background: linear-gradient(135deg, #1a9850 0%, #66bd63 100%);
+    color: white;
+}
+
+.stat-value {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    opacity: 0.85;
+}
+
+/* Main Content Layout */
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 24px;
+}
+
+@media (max-width: 1024px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Map Container */
+.map-container {
+    position: relative;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+#map {
+    height: 600px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* Legend */
+.legend {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    max-width: 220px;
+}
+
+.legend h4 {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+}
+
+.legend-subtitle {
+    font-size: 0.75rem;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.legend-items {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+}
+
+.legend-color {
+    width: 20px;
+    height: 16px;
+    border-radius: 3px;
+    flex-shrink: 0;
+}
+
+.legend-note {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #eee;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.se-indicator {
+    width: 20px;
+    height: 16px;
+    border: 3px solid #2563eb;
+    border-radius: 3px;
+    background: transparent;
+}
+
+/* Sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.controls,
+.info-panel,
+.rankings,
+.data-source {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.controls h3,
+.info-panel h3,
+.rankings h3,
+.data-source h4 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    color: #1a1a2e;
+}
+
+/* Checkbox Controls */
+.checkbox-label,
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 8px 0;
+    font-size: 0.9rem;
+}
+
+.checkbox-label input[type="checkbox"],
+.radio-label input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #2563eb;
+}
+
+.level-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 12px 0;
+}
+
+/* Info Panel */
+.info-panel p {
+    font-size: 0.9rem;
+    color: #444;
+    margin-bottom: 12px;
+}
+
+.info-panel p:last-child {
+    margin-bottom: 0;
+}
+
+.highlight-text {
+    background: #e8f5e9;
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 4px solid #1a9850;
+}
+
+/* Rankings */
+.rankings-subtitle {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.rankings-list {
+    list-style: none;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.rankings-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    margin-bottom: 4px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    transition: background 0.2s;
+}
+
+.rankings-list li:hover {
+    background: #e9ecef;
+}
+
+.rankings-list li.se-borough {
+    background: #e3f2fd;
+    border-left: 3px solid #2563eb;
+}
+
+.rankings-list .rank {
+    font-weight: 600;
+    color: #666;
+    min-width: 24px;
+}
+
+.rankings-list .borough-name {
+    flex: 1;
+    margin: 0 8px;
+}
+
+.rankings-list .ratio {
+    font-weight: 600;
+    color: #1a9850;
+}
+
+.rankings-list li.unaffordable .ratio {
+    color: #d73027;
+}
+
+.rankings-list li.rankings-note {
+    background: transparent;
+    text-align: center;
+    color: #666;
+    font-size: 0.8rem;
+    padding: 12px;
+}
+
+/* Data Source */
+.data-source ul {
+    list-style: none;
+}
+
+.data-source li {
+    margin-bottom: 6px;
+}
+
+.data-source a {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.data-source a:hover {
+    text-decoration: underline;
+}
+
+/* Leaflet Popup Customization */
+.leaflet-popup-content-wrapper {
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.leaflet-popup-content {
+    margin: 0;
+    min-width: 200px;
+}
+
+.popup-content {
+    padding: 16px;
+}
+
+.popup-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #eee;
+}
+
+.popup-content.se-london h3 {
+    border-bottom-color: #2563eb;
+}
+
+.popup-stat {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    font-size: 0.9rem;
+}
+
+.popup-stat .label {
+    color: #666;
+}
+
+.popup-stat .value {
+    font-weight: 600;
+}
+
+.popup-stat.highlight {
+    background: #f0fdf4;
+    margin: 8px -16px;
+    padding: 10px 16px;
+}
+
+.popup-stat.highlight .value {
+    color: #1a9850;
+    font-size: 1.1rem;
+}
+
+.se-badge {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+/* Loading State */
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 12px;
+    }
+    
+    .header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .stats-panel {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stat-value {
+        font-size: 1.4rem;
+    }
+    
+    #map {
+        height: 450px;
+    }
+    
+    .legend {
+        bottom: 10px;
+        left: 10px;
+        padding: 12px;
+        max-width: 180px;
+    }
+}
+
+/* Theme Toggle */
+.theme-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* Tube Markers */
+.tube-marker {
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+}
+
+/* Popup Section Titles */
+.popup-section-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+/* Better value colors */
+.popup-stat .value.better {
+    color: #1a9850;
+}
+
+.popup-stat .value.worse {
+    color: #d73027;
+}

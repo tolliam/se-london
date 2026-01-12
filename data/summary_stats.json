@@ -1,0 +1,199 @@
+{
+  "london_overall": {
+    "avg_ratio": 13.3,
+    "avg_price": 587121,
+    "avg_earnings": 43393
+  },
+  "se_london": {
+    "avg_ratio": 11.6,
+    "avg_price": 454285,
+    "avg_earnings": 39142,
+    "boroughs": [
+      "Greenwich",
+      "Lewisham",
+      "Southwark",
+      "Lambeth",
+      "Bromley",
+      "Bexley",
+      "Croydon"
+    ],
+    "most_affordable": "Bexley"
+  },
+  "rest_of_london": {
+    "avg_ratio": 13.8,
+    "avg_price": 622884,
+    "avg_earnings": 44538
+  },
+  "comparison": {
+    "ratio_difference": 2.2,
+    "price_difference": 168598,
+    "se_london_savings_percent": 27.1
+  },
+  "rankings": [
+    {
+      "borough_name": "Tower Hamlets",
+      "affordability_ratio": 9.0,
+      "is_se_london": false
+    },
+    {
+      "borough_name": "Barking and Dagenham",
+      "affordability_ratio": 10.3,
+      "is_se_london": false
+    },
+    {
+      "borough_name": "Bexley",
+      "affordability_ratio": 10.7,
+      "is_se_london": true
+    },
+    {
+      "borough_name": "Croydon",
+      "affordability_ratio": 10.8,
+      "is_se_london": true
+    },
+    {
+      "borough_name": "Greenwich",
+      "affordability_ratio": 11.0,
+      "is_se_london": true
+    },
+    {
+      "borough_name": "Sutton",
+      "affordability_ratio": 11.3,
+      "is_se_london": false
+    },
+    {
+      "borough_name": "Havering",
+      "affordability_ratio": 11.4,
+      "is_se_london": false
+    },
+    {
+      "borough_name": "Southwark",
+      "affordability_ratio": 11.6,
+      "is_se_london": true
+    },
+    {
+      "borough_name": "Hounslow",
+      "affordability_ratio": 11.8,
+      "is_se_london": false
+    },
+    {
+      "borough_name": "Bromley",
+      "affordability_ratio": 12.0,
+      "is_se_london": true
+    },
+    {
+      "borough_name": "Newham",
+      "affordability_ratio": 12.0,
+      "is_se_london": false
+    },
+    {
+      "borough_name": "Hillingdon",
+      "affordability_ratio": 12.2,
+      "is_se_london": false
+    },
+    {
+      "borough_name": "City of London",
+      "affordability_ratio": 12.2,
+      "is_se_london": false
+    },
+    {
+      "borough_name": "Lewisham",
+      "affordability_ratio": 12.4,
+      "is_se_london": true
+    },
+    {
+      "borough_name": "Enfield",
+      "affordability_ratio": 12.5,
+      "is_se_london": false
+    },
+    {
+      "borough_name": "Lambeth",
+      "affordability_ratio": 12.6,
+      "is_se_london": true
+    },
+    {
+      "borough_name": "Redbridge",
+      "affordability_ratio": 12.7,
+      "is_se_london": false
+    },
+    {
+      "borough_name": "Kingston upon Thames",
+      "affordability_ratio": 13.0,
+      "is_se_london": false
+    },
+    {
+      "borough_name": "Harrow",
+      "affordability_ratio": 13.2,
+      "is_se_london": false
+    },
+    {
+      "borough_name": "Merton",
+      "affordability_ratio": 13.2,
+      "is_se_london": false
+    },
+    {
+      "borough_name": "Ealing",
+      "affordability_ratio": 13.5,
+      "is_se_london": false
+    },
+    {
+      "borough_name": "Wandsworth",
+      "affordability_ratio": 13.6,
+      "is_se_london": false
+    },
+    {
+      "borough_name": "Hackney",
+      "affordability_ratio": 13.6,
+      "is_se_london": false
+    },
+    {
+      "borough_name": "Barnet",
+      "affordability_ratio": 13.7,
+      "is_se_london": false
+    },
+    {
+      "borough_name": "Brent",
+      "affordability_ratio": 13.8,
+      "is_se_london": false
+    },
+    {
+      "borough_name": "Waltham Forest",
+      "affordability_ratio": 14.0,
+      "is_se_london": false
+    },
+    {
+      "borough_name": "Islington",
+      "affordability_ratio": 14.0,
+      "is_se_london": false
+    },
+    {
+      "borough_name": "Haringey",
+      "affordability_ratio": 14.7,
+      "is_se_london": false
+    },
+    {
+      "borough_name": "Richmond upon Thames",
+      "affordability_ratio": 15.6,
+      "is_se_london": false
+    },
+    {
+      "borough_name": "Hammersmith and Fulham",
+      "affordability_ratio": 16.2,
+      "is_se_london": false
+    },
+    {
+      "borough_name": "Camden",
+      "affordability_ratio": 16.8,
+      "is_se_london": false
+    },
+    {
+      "borough_name": "Westminster",
+      "affordability_ratio": 17.5,
+      "is_se_london": false
+    },
+    {
+      "borough_name": "Kensington and Chelsea",
+      "affordability_ratio": 26.4,
+      "is_se_london": false
+    }
+  ]
+}
